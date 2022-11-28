@@ -1,2 +1,304 @@
 @import url(./fonts.css);
 
+/* Variables */
+:root {
+  /* text colors */
+  --title-color: #ff9401;
+  --subtitle-color: #2e2e2e;
+  --text-color: #3f3232;
+  --btn-color: #ffffff;
+  --recipe-btn-color: #696969;
+  --rating-and-cite-color: #818181;
+  --footer-links-color: #6a5c5c;
+  --copyrights-color: #685d5d;
+  --reviews-job-title-color: #675959;
+
+  /* bg-colors */
+  --main-bg-color: #fffefc;
+  --section-gradient: linear-gradient(
+    180deg,
+    rgba(255, 148, 1, 0.05) 0%,
+    rgba(255, 237, 211, 0) 100%
+  );
+  --btn-bg: #ff9401;
+  --service-img-bg: #fff5e4;
+  --recipe-btn-bg: rgba(196, 196, 196, 0.26);
+  --reviews-btn-disabled: #3a1212;
+  --reviews-btn: #ff9401;
+
+  /* effects */
+  --drop-shadow-light: 0 20px 40px rgba(255, 148, 1, 0.2);
+  --drop-shadow-deep: 0 40px 80px rgba(255, 148, 1, 0.15);
+}
+
+/* Global */
+.page-body {
+  min-width: 1170px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Circular Std', Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 32px;
+  background-color: var(--main-bg-color);
+  color: var(--text-color);
+}
+
+.container {
+  width: 1171px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.section-title {
+  font-family: Gilroy, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--title-color);
+}
+
+.section-subtitle {
+  font-family: Gilroy, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 60px;
+  color: var(--subtitle-color);
+}
+
+.section-text {
+  font-weight: 450;
+}
+
+.btn {
+  font: inherit;
+  line-height: 30px;
+  text-align: center;
+  color: var(--btn-color);
+  vertical-align: middle;
+  background-color: var(--btn-bg);
+  border: none;
+  border-radius: 31px;
+  box-shadow: var(--drop-shadow-light);
+}
+
+/* Sections background */
+.about,
+.popular,
+.page-footer {
+  background: var(--section-gradient);
+}
+
+/* Header */
+.logo-text {
+  font-family: 'Playfair Display', Times, serif;
+  font-size: 22px;
+  line-height: 30px;
+  text-transform: lowercase;
+  color: var(--subtitle-color);
+}
+
+.header-menu {
+  list-style: none;
+}
+
+/* Hero section */
+.hero-subtitle {
+  font-weight: 800;
+  font-size: 96px;
+  line-height: 108px;
+}
+
+.socials {
+  list-style: none;
+}
+
+.socials-item {
+  background-color: var(--btn-color);
+  border-radius: 50%;
+  box-shadow: var(--drop-shadow-light);
+}
+
+.socials-link {
+  color: inherit;
+}
+
+/* Features */
+.features-subtitle {
+  font-size: 48px;
+}
+
+.features {
+  list-style: none;
+}
+
+.feature-title {
+  font-family: Gilroy, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: var(--subtitle-color);
+}
+
+.feature-desc {
+  font-size: 18px;
+  line-height: 29px;
+}
+
+/* Popular */
+.popular-subtitle {
+  font-weight: 600;
+  font-size: 48px;
+}
+
+.recipe {
+  background-color: var(--btn-color);
+  border-radius: 8px;
+  box-shadow: var(--drop-shadow-deep);
+}
+
+.recipe-name {
+  font-family: Gilroy, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 60px;
+  color: var(--subtitle-color);
+}
+
+.recipe-img {
+  background-color: var(--btn-color);
+  border-radius: 8px;
+}
+
+.recipe-raiting {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 60px;
+  color: var(--rating-and-cite-color);
+}
+
+.recipe-btn {
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 60px;
+  text-transform: uppercase;
+  color: var(--recipe-btn-color);
+  background-color: var(--recipe-btn-bg);
+  border: none;
+  border-radius: 15px;
+}
+
+.recipe-price {
+  font-family: Gilroy, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 60px;
+  color: var(--btn-bg);
+}
+
+/* Order */
+.order-subtitle {
+  font-size: 48px;
+}
+
+.order-text {
+  font-weight: 500;
+}
+
+/* Reviews */
+.reviews-subtitle {
+  font-size: 48px;
+}
+
+.testimonial-text {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.testimonial-author {
+  font-family: Gilroy, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.testimonial-author-job-title {
+  font-family: 'Circular Std', Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 450;
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--reviews-job-title-color);
+}
+
+/* Footer */
+
+/* contacts */
+.contacts-email,
+.contacts-website {
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 30px;
+  color: var(--text-color);
+}
+
+.footer-section-title {
+  font-family: Gilroy, Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+  text-transform: capitalize;
+}
+
+.dishes-list,
+.info-links,
+.useful-links,
+.footer-socials-links {
+  list-style: none;
+  text-transform: capitalize;
+}
+
+.dishes-link,
+.info-link,
+.useful-link {
+  color: var(--footer-links-color);
+  font-weight: 450;
+  font-size: 16px;
+  line-height: 30px;
+}
+
+.dishes-link {
+  font-size: 18px;
+}
+
+.footer-socials-link {
+  font-weight: 500;
+  font-size: 16px;
+  color: var(--subtitle-color);
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-weight: 450;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--copyrights-color);
+}
