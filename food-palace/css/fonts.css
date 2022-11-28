@@ -1,0 +1,71 @@
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+     url('../fonts/PlayfairDisplay-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Book.woff2') format('woff2'),
+     url('../fonts/CircularStd-Book.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-Medium.woff2') format('woff2'),
+     url('../fonts/CircularStd-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../fonts/CircularStd-MediumItalic.woff2') format('woff2'),
+     url('../fonts/CircularStd-MediumItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-Semibold.woff2') format('woff2'),
+     url('../fonts/Gilroy-Semibold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-Bold.woff2') format('woff2'),
+     url('../fonts/Gilroy-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-BoldItalic.woff2') format('woff2'),
+     url('../fonts/Gilroy-BoldItalic.woff') format('woff');
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Gilroy;
+  src: url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+     url('../fonts/Gilroy-Extrabold.woff') format('woff');
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+}
