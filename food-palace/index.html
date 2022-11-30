@@ -47,7 +47,7 @@
     </div>
     
     <section class="section hero">
-      <div class="container">
+      <div class="container hero-container">
         <h2 class="section-title hero-title">Restaurant</h2>
       <p class="section-subtitle hero-subtitle">Good food
         Good mood</p>
@@ -84,7 +84,7 @@
     </section>
 
     <section class="section about">
-      <div class="container">
+      <div class="container about-container">
         <h2 class="section-title about-title">About us</h2>
       <p class="section-subtitle about-subtitle">Simple Way of Eating Delicious</p>
       <p class="section-text about-text">Keep healthy food readily available. When you get hungry, you’re more likely to
@@ -94,10 +94,10 @@
     </section>
 
     <section class="section features">
-      <div class="container">
+      <div class="container features-container">
         <h2 class="section-title features-title">Features</h2>
       <p class="section-subtitle features-subtitle">Our Awesome Services</p>
-      <ul class="features">
+      <ul class="features-list">
         <li class="feature">
           <h3 class="feature-title">Quality Food</h3>
           <p class="feature-desc">Keep healthy food readily available. When you get hungry, you’re more likely to </p>
@@ -115,10 +115,11 @@
     </section>
 
     <section class="section popular">
-      <div class="container">
+      <div class="container popular-container">
         <h2 class="section-title popular-title">Recipes</h2>
       <p class="section-subtitle popular-subtitle">Most Popular Items</p>
-      <!-- 1 -->
+      <div class="articles">
+        <!-- 1 -->
       <article class="recipe">
         <h3 class="recipe-name">Flame-boiled dish</h3>
         <img class="recipe-img" src="img/content/flame-boiled.jpg" width="330" height="231"
@@ -144,12 +145,13 @@
         <button class="recipe-btn">Add to cart</button>
         <p class="recipe-price">$ 18.99</p>
       </article>
+      </div>
       <a class="btn setion-btn popular-btn" href="#!">See more recipes</a>
       </div>
     </section>
 
     <section class="section order">
-      <div class="container">
+      <div class="container order-container">
         <h2 class="section-title order-title">Take away</h2>
       <p class="section-subtitle order-subtitle">Simple Way To Order Your Food</p>
       <p class="section-text order-text">Keep healthy food readily available. When you get hungry, you’re more likely to
@@ -160,30 +162,32 @@
     </section>
 
     <section class="section reviews">
-      <div class="container">
+      <div class="container reviews-container">
         <h2 class="section-title reviews-title">Testimonial</h2>
       <p class="section-subtitle reviews-subtitle">That’s what our Client Says</p>
       <blockquote class="testimonial">
         <p class="testimonial-text">
           “Food palace is an awesome place. Food is everything we are. It’s an extension of nationalist feeling, ethnic
           feeling, your personal history, your province”
-        </p>
-        <cite class="testimonial-author">
-          Jessica Parker <span class="testimonial-author-job-title">Product Designer @ Kitty</span>
-        </cite>
+        </p>        
       </blockquote>
-      <button class="reviews-btn reviews-btn-back" type="button">
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="reviews-btn reviews-btn-next" type="button">
-        <span class="visually-hidden">Next</span>
-      </button>
+      <cite class="testimonial-author">
+        Jessica Parker <span class="testimonial-author-job-title">Product Designer @ Kitty</span>
+      </cite>
+      <div class="testimonial-controls">
+        <button class="reviews-btn reviews-btn-back" type="button">
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="reviews-btn reviews-btn-next" type="button">
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
       </div>
     </section>
   </main>
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="container footer-container">
       <section class="footer-section contacts">
         <h2 class="visually-hidden">Contacts</h2>
         <a class="footer-logo logo" href="index.html">
