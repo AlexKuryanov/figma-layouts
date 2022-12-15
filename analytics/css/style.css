@@ -5,6 +5,7 @@
 
 .page {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 .page-body {
@@ -318,6 +319,57 @@
   align-items: center;
 }
 
+.footer {
+  background-color: #172755;
+  background-image: url(../images/subtract-xl.png);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+}
+.footer-container {
+  display: grid;
+  grid-template-columns: 14rem 1fr auto;
+  justify-items: start;
+  align-items: center;
+  border-top: 1px solid #2A407C;
+  padding-top: 6.3rem;
+}
+.footer-menu {
+  justify-self: center;
+}
+.footer-social {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .menu-link {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  font-weight: 400;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  column-gap: 4rem;
+  padding: 0;
+}
+.socials-item {
+  width: 2.5rem;
+  height: 2.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.socials-item-facebook {
+  background-image: url(../icons/facebook-icon.svg);
+}
+.socials-item-twitter {
+  background-image: url(../icons/twitter-icon.svg);
+}
+.socials-item-instagram {
+  background-image: url(../icons/instagram-icon.svg);
+}
+
 .main-content {
   position: relative;
 }
@@ -384,7 +436,7 @@
   background-color: #172755;
   background-image: url("../images/subtract-xl.png");
   background-repeat: no-repeat;
-  background-position: right top 20rem;
+  background-position: right top 23.1rem;
   clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
   z-index: -1;
 }
