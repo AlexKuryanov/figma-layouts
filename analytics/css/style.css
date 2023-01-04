@@ -320,10 +320,11 @@
 }
 
 .footer {
+  padding-bottom: 10rem;
   background-color: #172755;
   background-image: url(../images/subtract-xl.png);
   background-repeat: no-repeat;
-  background-position: right bottom;
+  background-position: right bottom -0.2rem;
 }
 .footer-container {
   display: grid;
