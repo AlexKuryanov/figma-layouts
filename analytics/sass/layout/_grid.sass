@@ -4,6 +4,10 @@
     grid-template-columns: 55rem 1fr
     @include respond(tab-land)
       grid-template-columns: 45rem 1fr
+    @include respond(tab-port)
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr
+      padding-top: 25rem
   &-images-block
     width: 40vw
     height: 55rem
@@ -13,6 +17,13 @@
     overflow-x: hidden
     @include respond(tab-land)
       max-height: 48rem
+    @include respond(tab-port)
+      width: 48vw
+      height: 25rem
+      top: 2.9rem
+      left: 50%
+      overflow-x: visible
+      transform: translateX(-50%)
     & img
       position: absolute
       &:first-child
@@ -22,6 +33,12 @@
       &:last-child
         top: 11rem
         left: -2.9rem
+        @include respond(tab-port)
+          display: none
+  &-btn
+    @include respond(tab-port)
+      width: 100%
+      text-align: center
 
 .features
   @include respond(tab-land)

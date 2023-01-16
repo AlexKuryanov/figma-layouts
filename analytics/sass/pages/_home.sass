@@ -11,6 +11,10 @@
   overflow-x: hidden
   @include respond(tab-land)
     clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%)
+  @include respond(tab-port)
+    padding-top: 3rem
+    padding-bottom: 12.8rem
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
   &:after
     content: ""
     position: absolute
@@ -27,6 +31,9 @@
     @include respond(tab-land)
       clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%)
       background-position: 0 -144px, right -144px
+    @include respond(tab-port)
+      background-image: none
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%)
   &-text-block
     max-width: 55rem
   &-text
