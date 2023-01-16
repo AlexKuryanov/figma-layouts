@@ -44,9 +44,13 @@
 .features
   @include respond(tab-land)
     padding-bottom: 5rem
+  @include respond(tab-port)
+    padding-bottom: 4.4rem
   &-container
     display: grid
     justify-items: center
+    @include respond(tab-port)
+      justify-items: start
   &-list
     display: flex
     flex-wrap: wrap
@@ -71,5 +75,3 @@
     justify-content: center
     column-gap: 8rem
     width: 100%
-
-

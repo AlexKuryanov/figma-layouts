@@ -4,7 +4,8 @@
   align-items: center
   @include respond(tab-land)
     grid-template-columns: 39rem 1fr
-    // column-gap: 7rem
+  @include respond(tab-port)
+    grid-template-columns: 33.5rem
   &-img
     display: block
     justify-self: end
@@ -12,10 +13,17 @@
     border-radius: 3rem
     box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2)
     box-sizing: content-box
+    @include respond(tab-port)
+      justify-self: center
   &:nth-child(2n)
     grid-template-columns: 1fr 48rem
     @include respond(tab-land)
       grid-template-columns: 1fr 39rem
+    @include respond(tab-port)
+      grid-template-columns: 33.5rem
     & .description-img
       order: -1
       justify-self: start
+      @include respond(tab-port)
+        order: 0
+        justify-self: center
