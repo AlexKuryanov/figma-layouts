@@ -5,13 +5,18 @@
   column-gap: 4rem
   padding-left: 8.2rem
   list-style: none
-  &-user 
+  @include respond(tab-land)
+    padding-left: 0
+    column-gap: 2rem
+  &-user
     padding-left: 0
   &-signup
     padding: 1rem 5.3rem
     border: 1px solid $border-color
     border-radius: 6.8rem
-  &-link 
+    @include respond(tab-land)
+      padding: 0.5rem 3rem
+  &-link
     text-decoration: none
     color: $color-text
 

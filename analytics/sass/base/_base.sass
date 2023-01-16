@@ -4,6 +4,8 @@
 .page
   font-size: 62.5%
   scroll-behavior: smooth
+  @include respond(tab-land)
+    font-size: 56.25%
 
 .page-body
   background-color: $color-light
@@ -13,6 +15,8 @@
   width: calc(118rem + 15px * 2)
   margin: 0 auto
   padding: 0 15px
+  @include respond(tab-land)
+    width: 90rem
 
 .visually-hidden
   position: absolute

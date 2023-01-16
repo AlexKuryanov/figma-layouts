@@ -2,7 +2,10 @@
   display: grid
   grid-template-columns: 48rem 1fr
   align-items: center
-  &-img 
+  @include respond(tab-land)
+    grid-template-columns: 39rem 1fr
+    // column-gap: 7rem
+  &-img
     display: block
     justify-self: end
     padding: 5.1rem 7.2rem 4.9rem 6.4rem
@@ -11,6 +14,8 @@
     box-sizing: content-box
   &:nth-child(2n)
     grid-template-columns: 1fr 48rem
-    & .description-img 
+    @include respond(tab-land)
+      grid-template-columns: 1fr 39rem
+    & .description-img
       order: -1
       justify-self: start

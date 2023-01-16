@@ -1,5 +1,5 @@
 .header
-  padding: 5rem
+  padding: 5rem 0
   background-color: $color-dark
   background-image: url("../images/subtract-sm.png"), url("../images/subtract-l.png")
   background-repeat: no-repeat, no-repeat
@@ -12,3 +12,5 @@
     display: grid
     grid-template-columns: 18.4rem 1fr auto
     align-items: center
+    @include respond(tab-land)
+      justify-items: center

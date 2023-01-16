@@ -2,26 +2,34 @@
   &-container
     display: grid
     grid-template-columns: 55rem 1fr
-    column-gap: 8.1rem
-  &-images-block 
+    @include respond(tab-land)
+      grid-template-columns: 45rem 1fr
+  &-images-block
     width: 40vw
+    height: 55rem
     position: absolute
     top: 0
     right: 0
-    & img 
+    overflow-x: hidden
+    @include respond(tab-land)
+      max-height: 48rem
+    & img
       position: absolute
       &:first-child
+        max-height: 100%
         left: 0
         top: 0
       &:last-child
         top: 11rem
-        left: -5.9rem
+        left: -2.9rem
 
 .features
+  @include respond(tab-land)
+    padding-bottom: 5rem
   &-container
     display: grid
     justify-items: center
-  &-list 
+  &-list
     display: flex
     flex-wrap: wrap
     justify-content: space-between
@@ -31,15 +39,17 @@
   display: grid
   grid-template-rows: 1fr 1fr 1fr
   row-gap: 12rem
+  @include respond(tab-land)
+    row-gap: 6rem
 
 .prices
-  &-container 
+  &-container
     display: grid
     grid-template-rows: auto auto 1fr
     justify-items: center
-  &-cards 
+    justify-content: center
+  &-cards
     display: flex
-    flex-wrap: wrap
     justify-content: center
     column-gap: 8rem
     width: 100%

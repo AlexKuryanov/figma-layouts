@@ -7,7 +7,10 @@
   padding-bottom: 25rem
   position: relative
   background-color: $color-red
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 98%)
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%)
+  overflow-x: hidden
+  @include respond(tab-land)
+    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%)
   &:after
     content: ""
     position: absolute
@@ -19,8 +22,11 @@
     background-image: url("../images/subtract-sm.png"), url("../images/subtract-l.png")
     background-repeat: no-repeat, no-repeat
     background-position: 0 -170px, right -170px
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 98%)
+    clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%)
     z-index: -1
+    @include respond(tab-land)
+      clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%)
+      background-position: 0 -144px, right -144px
   &-text-block
     max-width: 55rem
   &-text
@@ -30,6 +36,8 @@
 .features
   padding-top: 3.8rem
   padding-bottom: 13rem
+  @include respond(tab-land)
+    padding-bottom: 7rem
   &-list
     width: 100%
     margin: 0
@@ -38,6 +46,8 @@
 
 .descriptions
   padding-bottom: 11.4rem
+  @include respond(tab-land)
+    padding-bottom: 6rem
 
 .prices
   padding-top: 27.2rem
@@ -45,6 +55,8 @@
   position: relative
   background-color: $color-red
   clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%)
+  @include respond(tab-land)
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%)
   &:after
     content: ""
     position: absolute
@@ -58,6 +70,8 @@
     background-position: right top 23.1rem
     clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%)
     z-index: -1
+    @include respond(tab-land)
+      clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%)
   &-text
     width: 55%
     margin-bottom: 8rem
