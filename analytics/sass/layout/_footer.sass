@@ -42,12 +42,19 @@
     height: 2.5rem
     background-repeat: no-repeat
     background-position: center
+    cursor: pointer
+    transition: all .3s ease
     &-facebook
       background-image: url(../icons/facebook-icon.svg)
     &-twitter
       background-image: url(../icons/twitter-icon.svg)
     &-instagram
       background-image: url(../icons/instagram-icon.svg)
+    &:hover
+      border-radius: 50%
+      background-color: $color-light
+    &:active
+      background-color: $color-red
   &-link
     display: block
     width: 100%

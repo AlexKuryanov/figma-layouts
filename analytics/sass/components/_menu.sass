@@ -17,6 +17,14 @@
     padding: 1rem 5.3rem
     border: 1px solid $border-color
     border-radius: 6.8rem
+    transition: all .3s ease
+    &:hover
+      border-color: $color-red
+    &:active
+      background-color: $color-red
+      & .user-menu-link
+        color: $color-white
+
     @include respond(tab-land)
       padding: 0.5rem 3rem
     @include respond(tab-port)
@@ -24,6 +32,11 @@
   &-link
     text-decoration: none
     color: $color-text
+    transition: all .3s ease
+    &:hover
+      color: $color-white
+    &:active
+      color: $color-red
 
 .page-menu
   @include respond(tab-port)

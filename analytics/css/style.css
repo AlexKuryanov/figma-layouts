@@ -16,6 +16,7 @@
 .page-body {
   background-color: #F8F9FF;
   overflow-x: hidden;
+  perspective: 800px;
 }
 
 .container {
@@ -208,6 +209,16 @@
   padding: 1rem 5.3rem;
   border: 1px solid #465B95;
   border-radius: 6.8rem;
+  transition: all 0.3s ease;
+}
+.menu-signup:hover {
+  border-color: #EF2A82;
+}
+.menu-signup:active {
+  background-color: #EF2A82;
+}
+.menu-signup:active .user-menu-link {
+  color: #ffffff;
 }
 @media only screen and (max-width: 1209px) {
   .menu-signup {
@@ -222,6 +233,13 @@
 .menu-link {
   text-decoration: none;
   color: #8794BA;
+  transition: all 0.3s ease;
+}
+.menu-link:hover {
+  color: #ffffff;
+}
+.menu-link:active {
+  color: #EF2A82;
 }
 
 @media only screen and (max-width: 767px) {
@@ -239,7 +257,17 @@
   text-decoration: none;
   color: #ffffff;
   background-color: #EF2A82;
+  border: 1px solid #EF2A82;
   border-radius: 6.8rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.btn:hover {
+  background-color: transparent;
+  color: #8794BA;
+}
+.btn:active {
+  background-color: #EF2A82;
 }
 
 .feature {
@@ -310,6 +338,10 @@
   border-radius: 3rem;
   box-shadow: 0 1.8rem 5rem -1.5rem rgba(25, 42, 89, 0.2);
   box-sizing: content-box;
+  transition: all 0.3s ease;
+}
+.description-img:hover {
+  transform: scale(1.1);
 }
 @media only screen and (max-width: 767px) {
   .description-img {
@@ -350,6 +382,10 @@
   padding-bottom: 7rem;
   background-color: rgba(15, 31, 75, 0.7);
   border-radius: 3rem;
+  transition: all 0.3s ease;
+}
+.tariff:hover {
+  transform: scale(1.05);
 }
 .tariff-header {
   width: 22rem;
@@ -399,6 +435,16 @@
   border: 1px solid #2A407C;
   font-size: 1.6rem;
   line-height: 1.9rem;
+  transition: all 0.3s ease;
+}
+.tariff-btn:hover {
+  border: 1px solid #EF2A82;
+  background-color: transparent;
+  color: #8794BA;
+}
+.tariff-btn:active {
+  background-color: #EF2A82;
+  color: #ffffff;
 }
 .tariff.active {
   background-color: #ffffff;
@@ -408,7 +454,18 @@
 }
 .tariff.active .tariff-btn {
   background-color: #EF2A82;
-  border: none;
+  border: 1px solid #EF2A82;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+.tariff.active .tariff-btn:hover {
+  border: 1px solid #EF2A82;
+  background-color: transparent;
+  color: #8794BA;
+}
+.tariff.active .tariff-btn:active {
+  background-color: #EF2A82;
+  color: #ffffff;
 }
 @media only screen and (max-width: 767px) {
   .tariff {
@@ -464,6 +521,10 @@
 }
 .hero-images-block img {
   position: absolute;
+  transition: all 0.3s ease;
+}
+.hero-images-block img:hover {
+  transform: skewX(-3deg);
 }
 .hero-images-block img:first-child {
   max-height: 100%;
@@ -697,6 +758,8 @@
   height: 2.5rem;
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .socials-item-facebook {
   background-image: url(../icons/facebook-icon.svg);
@@ -706,6 +769,13 @@
 }
 .socials-item-instagram {
   background-image: url(../icons/instagram-icon.svg);
+}
+.socials-item:hover {
+  border-radius: 50%;
+  background-color: #F8F9FF;
+}
+.socials-item:active {
+  background-color: #EF2A82;
 }
 .socials-link {
   display: block;

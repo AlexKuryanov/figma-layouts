@@ -8,6 +8,9 @@
   padding-bottom: 7rem
   background-color: $card-color
   border-radius: 3rem
+  transition: all .3s ease
+  &:hover
+    transform: scale(1.05)
   &-header
     width: 22rem
     margin: 0 auto
@@ -47,13 +50,30 @@
     border: 1px solid $line-color
     font-size: 1.6rem
     line-height: 1.9rem
+    transition: all .3s ease
+    &:hover
+      border: 1px solid $color-red
+      background-color: transparent
+      color: $color-text
+    &:active
+      background-color: $color-red
+      color: $color-white
   &.active
     background-color: $color-white
     & .tariff-title, & .tariff-offer
       color: $color-dark
     & .tariff-btn
       background-color: $color-red
-      border: none
+      border: 1px solid $color-red
+      box-sizing: border-box
+      transition: all .3s ease
+      &:hover
+        border: 1px solid $color-red
+        background-color: transparent
+        color: $color-text
+      &:active
+        background-color: $color-red
+        color: $color-white
   @include respond(tab-port)
     width: 28rem
     height: 35.8rem
