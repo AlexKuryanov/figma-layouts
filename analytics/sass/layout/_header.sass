@@ -4,6 +4,10 @@
   background-image: url("../images/subtract-sm.png"), url("../images/subtract-l.png")
   background-repeat: no-repeat, no-repeat
   background-position: 0 0, right 0
+  @include respond(tab-land)
+    background-image: url("../images/subtract-sm.png")
+    background-repeat: no-repeat
+    background-position: 0 0
   @include respond(tab-port)
     position: relative
     padding: 2rem 0
