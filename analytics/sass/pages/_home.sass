@@ -64,6 +64,9 @@
   clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%)
   @include respond(tab-land)
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%)
+  @include respond(tab-port)
+    padding-top: 13rem
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%)
   &:after
     content: ""
     position: absolute
@@ -79,7 +82,20 @@
     z-index: -1
     @include respond(tab-land)
       clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 100%)
+    @include respond(tab-port)
+      clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%)
+      background-image: none
+  &-title
+    @include respond(tab-port)
+      position: absolute
+      left: 0
+      margin: 0
   &-text
     width: 55%
     margin-bottom: 8rem
     text-align: center
+    @include respond(tab-port)
+      width: 42%
+      margin-bottom: 4.2rem
+      padding-top: 5.2rem
+      text-align: left

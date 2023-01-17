@@ -23,6 +23,8 @@
     margin: 0
     padding-bottom: 3.7rem
     border-bottom: 1px solid $line-color
+    @include respond(tab-port)
+      padding-bottom: 1rem
   &-offer
     justify-self: center
     align-self: center
@@ -31,21 +33,30 @@
     line-height: 3.5rem
     font-weight: 700
     color: $color-white
-  &-value 
+  &-value
     font-size: 6rem
-  &-term 
+  &-term
     display: block
     font-size: 1.6rem
     line-height: 2.2rem
     font-weight: 400
     color: $color-text
     text-align: center
-  &-btn 
+  &-btn
     background-color: transparent
     border: 1px solid $line-color
     font-size: 1.6rem
     line-height: 1.9rem
   &.active
+    background-color: $color-white
+    & .tariff-title, & .tariff-offer
+      color: $color-dark
+    & .tariff-btn
+      background-color: $color-red
+      border: none
+  @include respond(tab-port)
+    width: 28rem
+    height: 35.8rem
     background-color: $color-white
     & .tariff-title, & .tariff-offer
       color: $color-dark

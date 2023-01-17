@@ -33,12 +33,15 @@
       display: block
 
 .burger
+  display: none
   width: 2.5rem
   height: 2.5rem
-  display: flex
+  display: none
   flex-direction: column
   justify-content: space-between
   align-items: center
+  @include respond(tab-port)
+    display: flex
   &-line
     display: block
     width: 100%

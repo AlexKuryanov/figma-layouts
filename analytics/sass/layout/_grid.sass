@@ -70,8 +70,12 @@
     grid-template-rows: auto auto 1fr
     justify-items: center
     justify-content: center
+    @include respond(tab-port)
+      position: relative
   &-cards
     display: flex
     justify-content: center
     column-gap: 8rem
     width: 100%
+    @include respond(tab-port)
+      column-gap: 2rem
