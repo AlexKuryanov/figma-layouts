@@ -1,0 +1,84 @@
+.hero
+  &-container
+    display: grid
+    grid-template-columns: 55rem 1fr
+    @include respond(tab-land)
+      grid-template-columns: 45rem 1fr
+    @include respond(tab-port)
+      grid-template-columns: 1fr
+      grid-template-rows: 1fr
+      padding-top: 25rem
+  &-images-block
+    width: 40vw
+    height: 55rem
+    position: absolute
+    top: 0
+    right: 0
+    overflow-x: hidden
+    @include respond(tab-land)
+      max-height: 48rem
+    @include respond(tab-port)
+      width: 100vw
+      height: 25rem
+      top: 2.9rem
+      overflow-x: visible
+    & img
+      position: absolute
+      transition: all .3s ease
+      &:hover
+        transform: skewX(-3deg)
+      &:first-child
+        max-height: 100%
+        left: 0
+        top: 0
+        @include respond(tab-port)
+          left: 50%
+          transform: translateX(-50%)
+      &:last-child
+        top: 11rem
+        left: -2.9rem
+        @include respond(tab-port)
+          display: none
+  &-btn
+    @include respond(tab-port)
+      width: 100%
+      text-align: center
+
+.features
+  @include respond(tab-land)
+    padding-bottom: 5rem
+  @include respond(tab-port)
+    padding-bottom: 4.4rem
+  &-container
+    display: grid
+    justify-items: center
+    @include respond(tab-port)
+      justify-items: start
+  &-list
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    column-gap: 2rem
+
+.descriptions-wrapper
+  display: grid
+  grid-template-rows: 1fr 1fr 1fr
+  row-gap: 12rem
+  @include respond(tab-land)
+    row-gap: 6rem
+
+.prices
+  &-container
+    display: grid
+    grid-template-rows: auto auto 1fr
+    justify-items: center
+    justify-content: center
+    @include respond(tab-port)
+      position: relative
+  &-cards
+    display: flex
+    justify-content: center
+    column-gap: 8rem
+    width: 100%
+    @include respond(tab-port)
+      column-gap: 2rem

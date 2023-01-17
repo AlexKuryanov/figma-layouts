@@ -1,0 +1,64 @@
+.page-body
+  font-family: Roboto, sans-serif
+  font-size: 1.8rem
+  line-height: 2.7rem
+  font-weight: 400
+  color: $color-text
+
+.section-title
+  font-size: 4rem
+  line-height: 4.7rem
+  font-weight: 700
+  color: $color-dark
+  @include respond(tab-port)
+    font-size: 3rem
+    line-height: 3.5rem
+
+.hero
+  &-title
+    font-size: 5rem
+    line-height: 6rem
+    color: $color-white
+    @include respond(tab-land)
+      font-size: 4rem
+    @include respond(tab-port)
+      font-size: 3.1rem
+      line-height: 3.7rem
+  &-text
+    font-size: 1.8rem
+    line-height: 2.7rem
+
+.features
+  text-align: center
+
+.feature-title
+  font-weight: 700
+  font-size: 1.6rem
+  line-height: 1.9rem
+  color: $color-dark
+  @include respond(tab-port)
+    margin-top: 0
+    text-align: left
+
+.feature-desc
+  font-size: 1.6rem
+  line-height: 2.2rem
+  text-align: center
+  @include respond(tab-port)
+    margin-bottom: 0
+    line-height: 2rem
+    text-align: left
+
+.description
+  &-title
+    font-size: 4rem
+    line-height: 4.7rem
+    color: $color-dark
+    @include respond(tab-land)
+      font-size: 3rem
+  &-text
+    font-size: 1.4rem
+    line-height: 2rem
+
+.prices-title
+  color: $color-white

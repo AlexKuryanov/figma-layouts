@@ -1,0 +1,63 @@
+.footer
+  padding-bottom: 10rem
+  background-color: $color-dark
+  background-image: url(../images/subtract-xl.png)
+  background-repeat: no-repeat
+  background-position: right bottom -0.2rem
+  @include respond(tab-land)
+    background-position: right bottom -11.2rem
+  @include respond(tab-port)
+    background-image: none
+  &-container
+    display: grid
+    grid-template-columns: 14rem 1fr auto
+    justify-items: start
+    align-items: center
+    border-top: 1px solid $line-color
+    padding-top: 6.3rem
+    @include respond(tab-port)
+      justify-content: space-between
+      grid-template-columns: 1fr 1fr
+  &-menu
+    justify-self: center
+    @include respond(tab-port)
+      display: none
+  &-social
+    list-style: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+  & .menu-link
+    font-size: 1.4rem
+    line-height: 1.6rem
+    font-weight: 400
+
+.socials
+  display: flex
+  align-items: center
+  column-gap: 4rem
+  padding: 0
+  &-item
+    width: 2.5rem
+    height: 2.5rem
+    background-repeat: no-repeat
+    background-position: center
+    cursor: pointer
+    transition: all .3s ease
+    &-facebook
+      background-image: url(../icons/facebook-icon.svg)
+    &-twitter
+      background-image: url(../icons/twitter-icon.svg)
+    &-instagram
+      background-image: url(../icons/instagram-icon.svg)
+    &:hover
+      border-radius: 50%
+      background-color: $color-light
+    &:active
+      background-color: $color-red
+  &-link
+    display: block
+    width: 100%
+    height: 100%
+  @include respond(tab-port)
+    margin-left: auto

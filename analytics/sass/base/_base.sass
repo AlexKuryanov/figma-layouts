@@ -1,0 +1,47 @@
+*, ::before, ::after
+  box-sizing: border-box
+
+.page
+  font-size: 62.5%
+  scroll-behavior: smooth
+  @include respond(tab-land)
+    font-size: 56.25%
+
+.page-body
+  background-color: $color-light
+  overflow-x: hidden
+  perspective: 800px
+
+.container
+  width: calc(118rem + 15px * 2)
+  margin: 0 auto
+  padding: 0 15px
+  @include respond(tab-land)
+    width: 90rem
+  @include respond(tab-port)
+    width: 37.5rem
+    padding: 0 1rem
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden
+
+.section-title
+  margin: 0
+  padding: 0
+
+.section-text
+  margin: 0
+  padding: 0
+  @include respond(tab-port)
+    font-size: 1.4rem
+    line-height: 2rem
+    text-align: left

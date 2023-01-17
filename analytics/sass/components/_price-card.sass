@@ -1,0 +1,85 @@
+.tariff
+  display: grid
+  grid-template-rows: 1fr 1fr auto
+  justify-items: center
+  width: 34rem
+  height: 44rem
+  padding-top: 5rem
+  padding-bottom: 7rem
+  background-color: $card-color
+  border-radius: 3rem
+  transition: all .3s ease
+  &:hover
+    transform: scale(1.05)
+  &-header
+    width: 22rem
+    margin: 0 auto
+    text-align: center
+  &-title
+    margin: 0
+    margin-bottom: 10px
+    font-size: 3rem
+    line-height: 3.5rem
+    font-weight: 700
+    color: $color-white
+  &-users
+    margin: 0
+    padding-bottom: 3.7rem
+    border-bottom: 1px solid $line-color
+    @include respond(tab-port)
+      padding-bottom: 1rem
+  &-offer
+    justify-self: center
+    align-self: center
+    margin: 0
+    font-size: 3rem
+    line-height: 3.5rem
+    font-weight: 700
+    color: $color-white
+  &-value
+    font-size: 6rem
+  &-term
+    display: block
+    font-size: 1.6rem
+    line-height: 2.2rem
+    font-weight: 400
+    color: $color-text
+    text-align: center
+  &-btn
+    background-color: transparent
+    border: 1px solid $line-color
+    font-size: 1.6rem
+    line-height: 1.9rem
+    transition: all .3s ease
+    &:hover
+      border: 1px solid $color-red
+      background-color: transparent
+      color: $color-text
+    &:active
+      background-color: $color-red
+      color: $color-white
+  &.active
+    background-color: $color-white
+    & .tariff-title, & .tariff-offer
+      color: $color-dark
+    & .tariff-btn
+      background-color: $color-red
+      border: 1px solid $color-red
+      box-sizing: border-box
+      transition: all .3s ease
+      &:hover
+        border: 1px solid $color-red
+        background-color: transparent
+        color: $color-text
+      &:active
+        background-color: $color-red
+        color: $color-white
+  @include respond(tab-port)
+    width: 28rem
+    height: 35.8rem
+    background-color: $color-white
+    & .tariff-title, & .tariff-offer
+      color: $color-dark
+    & .tariff-btn
+      background-color: $color-red
+      border: none
