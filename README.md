@@ -4,6 +4,7 @@
 
 ## Case 1
 
+### [Макет](https://www.figma.com/file/ocD8AT1YFFuseqFTgJlNDY/fpalace-landing)
 
 🗂 Категория: Лендинг
 
@@ -16,7 +17,8 @@
 ### Result: https://alexkuryanov.github.io/figma-layouts/food-palace/
 
 ## Case 2
-### (https://www.figma.com/file/pIXIbrb2IZiKKb3mCn3zzy/Analytics-landing)
+
+### [Макет](https://www.figma.com/file/pIXIbrb2IZiKKb3mCn3zzy/Analytics-landing)
 
 🗂 Категория: Лендинг
 
